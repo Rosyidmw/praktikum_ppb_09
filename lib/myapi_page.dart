@@ -21,12 +21,13 @@ class _MyApiPageState extends State<MyApiPage> {
     _controller = CameraController(firstCamera, ResolutionPreset.high);
 
     _initializeControllerFuture = _controller.initialize();
-    setState(() {});
+    // setState(() {});
   }
 
   @override
   void initState() {
     super.initState();
+    _initializeCamera();
   }
 
   @override
@@ -39,7 +40,7 @@ class _MyApiPageState extends State<MyApiPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('API Perangkat Keras'),
+        title: const Text('Camera Example'),
         centerTitle: true,
         backgroundColor: Colors.grey.shade400,
       ),

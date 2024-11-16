@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_09/myapi_page.dart';
+// import 'package:praktikum_09/myapi_page.dart';
+import 'package:praktikum_09/myimage_gallery_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         // textTheme: GoogleFonts.poppinsTextTheme()
       ),
-      home: MyApiPage(),
+      home: ImageFromGalleryEx(ImageSourceType.camera),
+      //MyApiPage(),
     );
   }
 }
